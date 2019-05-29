@@ -1,12 +1,12 @@
 import React, { Component } from "react";
+import QuoteButon from "./QuoteButton";
 
 class QuoteMachine extends Component {
   constructor(props) {
     super(props);
     this.state = {
       quotes: [],
-      randomNumber: 0,
-      clicked: false
+      randomNumber: 0
     };
   }
 
@@ -21,7 +21,6 @@ class QuoteMachine extends Component {
         this.setState({
           randomNumber: Random
         });
-        //console.log(this.state.quotes);
       })
     );
   }
@@ -51,25 +50,10 @@ class QuoteMachine extends Component {
             ? this.state.quotes[this.state.randomNumber].quote
             : "Loading ..."}
         </h1>
-        <button onClick={this.handleClick}>Random Quote</button>
+        <QuoteButon handleClick={this.handleClick} />
       </div>
     );
   }
 }
 
 export default QuoteMachine;
-
-/* <div className="quote-container">
-        {quotes.map((quote, i) => (
-          <div className="quote-center" key={i}>
-            <h1 className="quote">{quote.quote}</h1>
-            <p className="quote-author">{quote.author}</p>
-            <ul>
-              <li>twitter icon</li>
-              <li>tumbler icon</li>
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      */

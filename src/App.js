@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import QuoteMachine from "./QuoteMachine";
+import QuoteMachine from "./QuoteMachine/QuoteMachine";
 
 class App extends Component {
   render() {
