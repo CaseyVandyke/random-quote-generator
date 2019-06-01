@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway";
+  box-sizing: border-box;
 }
 
 .quote-container {
@@ -9,3 +10,17 @@ body {
   border-radius: 3px;
   padding: 20px;
 }
+
+/*
+
+--------Background colors---------- 
+
+#f39c12
+#fb6964
+#74a857
+#27ae60
+#332124
+#15a085
+#e64c3c
+#2b3e50
+*/
