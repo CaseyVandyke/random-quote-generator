@@ -27,7 +27,8 @@ class QuoteMachine extends Component {
 
   // Call to Node server
   callAPI() {
-    fetch("http://localhost:4000/api/quotes").then(res =>
+    const url = "http://localhost:4000/api/quotes";
+    fetch(url).then(res =>
       res.json().then(json => {
         this.setState({
           quotes: json
